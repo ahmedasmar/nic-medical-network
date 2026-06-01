@@ -23,6 +23,9 @@ jobs:
       - name: Sync data
         run: npm run sync
 
+      - name: Test search
+        run: npm run test:search
+
       - name: Commit updated data
         run: |
           if git diff --quiet -- docs/data/*.json; then

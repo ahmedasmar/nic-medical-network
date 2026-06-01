@@ -48,3 +48,13 @@ npm run sync
 ```
 
 The workflow in `.github/workflows/sync-data.yml` can also refresh the JSON file on a schedule and commit changes back to the repository.
+
+## Search checks
+
+Run:
+
+```bash
+npm run test:search
+```
+
+The test covers combined Arabic and English searches such as `ramallah pharmacy`, `رام الله صيدلية`, `nablus doctor`, `dentist hebron`, `خالد gaza`, and `رام الله طبيب قلب`.
