@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#0f766e">
+    <title>NIC Medical Network</title>
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="manifest" href="manifest.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="header-inner">
+        <div>
+          <p class="eyebrow">Unofficial directory</p>
+          <h1>NIC Medical Network</h1>
+        </div>
+        <div class="sync-pill" id="syncStatus">Loading data...</div>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <section class="toolbar" aria-label="Provider filters">
+        <label class="search-field">
+          <span>Search provider, specialty, address, or phone</span>
+          <input id="queryInput" type="search" autocomplete="off" placeholder="Try Ramallah, pharmacy, heart, 059...">
+        </label>
+
+        <div class="filters">
+          <label>
+            <span>City</span>
+            <select id="cityFilter">
+              <option value="">All cities</option>
+            </select>
+          </label>
+          <label>
+            <span>Type</span>
+            <select id="typeFilter">
+              <option value="">All types</option>
+            </select>
+          </label>
+          <label>
+            <span>Specialty</span>
+            <select id="specialtyFilter">
+              <option value="">All specialties</option>
+            </select>
+          </label>
+          <label>
+            <span>View</span>
+            <select id="favoriteFilter">
+              <option value="">All providers</option>
+              <option value="favorites">Favorites only</option>
+            </select>
+          </label>
+        </div>
+
+        <div class="toolbar-actions">
+          <button class="secondary-button" id="resetButton" type="button">Reset</button>
+          <button class="secondary-button" id="exportButton" type="button">Export visible</button>
+        </div>
+      </section>
+
+      <section class="notice" aria-label="Source notice">
+        <strong>Not official.</strong>
+        Data is synced from the public NIC medical-network page. Confirm coverage and approvals with NIC or NatHealth before treatment.
+      </section>
+
+      <section class="results-head" aria-live="polite">
+        <div>
+          <p class="metric" id="resultCount">0 results</p>
+          <p class="subtle" id="resultMeta">Use filters to narrow the list.</p>
+        </div>
+        <button class="text-button" id="clearFavoritesButton" type="button">Clear favorites</button>
+      </section>
+
+      <section class="results-grid" id="results" aria-label="Medical providers"></section>
+
+      <div class="load-more-wrap">
+        <button class="primary-button" id="loadMoreButton" type="button">Load more</button>
+      </div>
+    </main>
+
+    <template id="providerTemplate">
+      <article class="provider-card">
+        <div class="card-topline">
+          <div>
+            <p class="provider-type"></p>
+            <h2></h2>
+          </div>
+          <button class="icon-button favorite-button" type="button" aria-label="Toggle favorite">☆</button>
+        </div>
+        <dl class="provider-details">
+          <div>
+            <dt>City</dt>
+            <dd class="provider-city"></dd>
+          </div>
+          <div>
+            <dt>Specialty</dt>
+            <dd class="provider-specialty"></dd>
+          </div>
+          <div class="wide">
+            <dt>Address</dt>
+            <dd class="provider-location"></dd>
+          </div>
+        </dl>
+        <div class="provider-actions"></div>
+      </article>
+    </template>
+
+    <script src="app.js" type="module"></script>
+  </body>
+</html>

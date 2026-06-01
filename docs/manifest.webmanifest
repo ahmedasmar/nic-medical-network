@@ -1,0 +1,17 @@
+{
+  "name": "NIC Medical Network",
+  "short_name": "NIC Network",
+  "description": "Unofficial fast browser for NIC Palestine medical network providers.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f6f8fb",
+  "theme_color": "#0f766e",
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml"
+    }
+  ]
+}

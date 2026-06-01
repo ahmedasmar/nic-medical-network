@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="NIC Medical Network">
+  <rect width="64" height="64" rx="12" fill="#0f766e"/>
+  <path d="M31 14h2a4 4 0 0 1 4 4v9h9a4 4 0 0 1 4 4v2a4 4 0 0 1-4 4h-9v9a4 4 0 0 1-4 4h-2a4 4 0 0 1-4-4v-9h-9a4 4 0 0 1-4-4v-2a4 4 0 0 1 4-4h9v-9a4 4 0 0 1 4-4z" fill="#fff"/>
+  <path d="M14 48h36v4H14z" fill="#f2c94c"/>
+</svg>
