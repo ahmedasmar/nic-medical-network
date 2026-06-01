@@ -4,6 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
+    "icons": "node scripts/generate-icons.mjs",
     "sync": "node scripts/sync-nic-medical-network.mjs",
     "test:search": "node scripts/test-search.mjs",
     "serve": "python3 -m http.server 4173 --directory docs"

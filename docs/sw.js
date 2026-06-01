@@ -1,4 +1,4 @@
-const CACHE_NAME = "nic-medical-network-v1";
+const CACHE_NAME = "nic-medical-network-v2";
 const ASSETS = [
   "./",
   "./index.html",
@@ -6,6 +6,8 @@ const ASSETS = [
   "./app.js",
   "./search.js",
   "./favicon.svg",
+  "./apple-touch-icon.png",
+  "./icon-512.png",
   "./manifest.webmanifest",
   "./data/providers.json",
   "./data/metadata.json"
