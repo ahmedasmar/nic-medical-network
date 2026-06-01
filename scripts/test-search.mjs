@@ -11,6 +11,7 @@ const scenarios = [
   { query: "رام الله صيدلية", min: 100, note: "Arabic city + Arabic type" },
   { query: "nablus doctor", min: 300, note: "English city + English type" },
   { query: "نابلس طبيب", min: 300, note: "Arabic city + Arabic type" },
+  { query: "دكتور نابلس اسنان", min: 50, note: "Colloquial Arabic doctor + city + specialty" },
   { query: "dentist hebron", min: 20, note: "English specialty + English city" },
   { query: "الخليل اسنان", min: 20, note: "Arabic city + normalized specialty" },
   { query: "heart ramallah", min: 20, note: "English specialty + English city" },
