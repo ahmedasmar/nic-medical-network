@@ -2,11 +2,11 @@
   "sourceName": "National Insurance Company Palestine medical network",
   "sourceUrl": "https://www.nic-pal.com/medical-network",
   "endpointUrl": "https://www.nic-pal.com/platform/ajax/medical-network/get-data",
-  "syncedAt": "2026-07-13T06:31:14.280Z",
-  "reportedTotal": 4507,
-  "providerCount": 4495,
+  "syncedAt": "2026-08-03T10:39:30.594Z",
+  "reportedTotal": 4494,
+  "providerCount": 4482,
   "perPage": 100,
-  "lastPage": 46,
+  "lastPage": 45,
   "facets": {
     "cities": [
       "اريحا",
