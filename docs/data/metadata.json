@@ -2,9 +2,9 @@
   "sourceName": "National Insurance Company Palestine medical network",
   "sourceUrl": "https://www.nic-pal.com/medical-network",
   "endpointUrl": "https://www.nic-pal.com/platform/ajax/medical-network/get-data",
-  "syncedAt": "2026-09-07T08:21:45.410Z",
-  "reportedTotal": 4455,
-  "providerCount": 4443,
+  "syncedAt": "2026-09-14T08:59:10.912Z",
+  "reportedTotal": 4456,
+  "providerCount": 4444,
   "perPage": 100,
   "lastPage": 45,
   "facets": {
